@@ -48,6 +48,10 @@ There are two ways how end user may choose to keep data in-sync with source:
 
     Here is a link to MySQL documentation on how to trigger mysqldump: https://dev.mysql.com/doc/refman/5.7/en/mysqldump-tips.html
 
+### Network Architecture
+Here is the MySQL virtualization network architecture
+![Logo] (\docs\image\Arch_Diag.png)
+
 Limitations
 -----------
 Virtual to Physical (V2P): Untested
@@ -57,7 +61,7 @@ Enterprise Raw Backup/Restore: Untested
 Transparent Data Encryption: Untested
 
 Virtualizing Master / Slave: Strongly recommended to ingest cold backups for Master / Slave databases to avoid data loss / inconsistency   
-    
+
 Where to Start?
 --------------
 By now, you must have an overall idea of what is possible with the MySQL plugin.
