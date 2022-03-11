@@ -50,7 +50,7 @@ There are two ways how end user may choose to keep data in-sync with source:
 
 ### Network Architecture
 Here is the MySQL virtualization network architecture
-![Logo](/docs/docs/image/Arch-Diag.png)
+![Network Diagram](/docs/docs/image/Arch-Diag.png)
 
 
 Limitations
