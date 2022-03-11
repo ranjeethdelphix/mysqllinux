@@ -51,8 +51,11 @@ There are two ways how end user may choose to keep data in-sync with source:
 Limitations
 -----------
 Virtual to Physical (V2P): Untested
+
 Enterprise Raw Backup/Restore: Untested
+
 Transparent Data Encryption: Untested
+
 Virtualizing Master / Slave: Strongly recommended to ingest cold backups for Master / Slave databases to avoid data loss / inconsistency   
     
 Where to Start?
