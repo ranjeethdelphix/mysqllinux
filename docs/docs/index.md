@@ -10,6 +10,8 @@ multiple virtual copies as required.
 There are two modes of operation of the plugin based on how the MySQL dSource is created
 and kept in-sync with source database.
 
+![Architecture Diagram](/docs/docs/image/Arch-Diag.png)
+
 ### Replication
 
 In the Replication mode, Delphix uses MySQL's built-in replication technology to keep
@@ -50,7 +52,7 @@ There are two ways how end user may choose to keep data in-sync with source:
 
 ### Network Architecture
 Here is the MySQL virtualization network architecture
-![Network Diagram2](/docs/docs/image/Arch-Diag.png) 
+![Network Diagram2](/docs/docs/image/Network-Diag.png)
 
 
 Limitations
