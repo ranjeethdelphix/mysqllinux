@@ -19,10 +19,10 @@ for configuration best practices.
  Even though a stage and target host can be same environment, it is strongly recommended to maintain staging and target hosts separate considering the performance challenges arising from shared resource utilization.
 
 ### Storage
-- Staging & Target host to hold delphix toolkit directory. Please refer to the link for toolkit directory requirements
+- Staging & Target host to hold Delphix toolkit directory. Please refer to the link for toolkit directory requirements
 https://docs.delphix.com/docs/datasets/unstructured-files-and-app-data/unstructured-files-environment-requirements/unstructured-files-on-unix-environments/requirements-for-unix-environments
 
 - If Delphix is managing backups, the Staging Host must have enough storage space in user specified backup location to host source database backup files.
 
 ### MySQL Version
-- MySQL Binary version on Staging and Target must match the version on the source database(s)
+- MySQL Binary version on Source, Staging and Target database should be same

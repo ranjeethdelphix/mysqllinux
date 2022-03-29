@@ -14,8 +14,8 @@ and kept in-sync with source database.
 
 ### Replication
 
-In the Replication mode, Delphix uses MySQL's built-in replication technology to keep
-the Delphix dSource in-sync with the MySQL source databases.
+In the Replication mode, Delphix uses MySQL's built-in replication process to keep
+the Delphix dSource in-sync with the MySQL source databases. It establishes a source / replica (master/slave) relationship between source and stage databases.
 
 Creation of the dSource requires a full backup of the source database(s) and there are
 two options to providing this backup.
