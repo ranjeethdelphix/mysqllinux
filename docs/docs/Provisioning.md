@@ -1,14 +1,14 @@
 # Provisioning
 
-Virtual Databases (VDB) are a virtualized copies of dSource. 
-A VDB can be created using a snapshot on the dSource timeflow. 
+Virtual Databases (VDB) are a virtualized copies of dSource.
+A VDB can be created using a snapshot on the dSource timeflow.
 
 ## Prerequisites
 
 - Require a linked dSource with at least 1 snapshot.
 - Require a Target environment added to Delphix.
 - A MySQL binary with the same version as the source db must be installed on the Target enviornment.
-  
+
     !!! warning
         It may take upto 5 minutes after successful dSource creation for the status to show as Active.
 
@@ -16,40 +16,40 @@ A VDB can be created using a snapshot on the dSource timeflow.
 ## Provisioning a VDB
 
 
-1. On the dSource Timeflow, click on the *Provision* action 
-   on the snapshot that you want to use for the VDB (highlighted below) 
-   
+1. On the dSource Timeflow, click on the *Provision* action
+   on the snapshot that you want to use for the VDB (highlighted below)
+
       ![Screenshot](./image/select-snap.png)
 
 2. Select the target host from the dropdown on which VDB needs to be created.  
-   If there are multiple MySQL repositories on the host, 
+   If there are multiple MySQL repositories on the host,
    select the one that matches the source db version.
-   
-    If there are multiple OS users on the host, select the user you want to use. 
-   
+
+    If there are multiple OS users on the host, select the user you want to use.
+
       ![Screenshot](./image/select-target.png)
 
 3. Enter the following values for the target configuration:
       - DB User
          This is the database user for the VDB. Delphix will use this user to manage the VDB.
          It is recommended that you use the same user account that was used by the staging db.
-        
+
       - DB Password
-         Password for the VDB db user. 
-   
+         Password for the VDB db user.
+
       - BaseDir
-         MySQL installation directory. This is where the location of */bin/mysql*
-   
+         MySQL installation directory. This is the location of the MySQL binaries. Default location is */bin/mysql* however mention the actual location of the binaries.
+
       - VDB Port
          MySQL database port for the VDB.
-   
+
       - VDB Server ID
          MySQL server id for the VDB. This server id must be non-zero and greater than the dsource server id.
-        
+
       - Mount Location
          This is the mount directory for Delphix VDB on the Target host.
          This location should be unique and empty.
- 
+
       ![Screenshot](./image/target-config.png)
 
 4. On Configuration screen, add VDB name, select Target group,  check *Auto vFiles Restart* checkbox and select **Next**
@@ -67,4 +67,4 @@ A VDB can be created using a snapshot on the dSource timeflow.
 
 And we're done!
 ----------------
-We have now successfully provisioned a MySQL VDB. 
+We have now successfully provisioned a MySQL VDB.
